@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mexican Touch Apartment</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="slider.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+</head>
+<body>
+    <header>
+        <h1>Book your cozy apartment in the center of the city!</h1>
+        <div class="head">
+            <p>Book now at only:
+                <span>
+                <a href="#">25$ a night</a>
+                </span>
+            </p>
+            <p class="contact">Contact us:
+                <span>
+                <a href="#">+383 44 123 321</a>
+                </span>
+            </p>
+
+        </div>
+    </header>
+    <div class="section-title">
+    <h2>Book a unique experience in our Mexican Touch Apartment </h2>
+    </div>
+    <div class="section">
+        <div>
+        <label for="Check-in">CHECK-IN DATE</label> <br>
+        <input type="date" id="Check-in" placeholder="mm/dd/yyyy">
+        </div> 
+        <div class="table">
+            <table>
+                <tr colspan="2">
+                    <td>
+                        <label for="Check-in">CHECK-OUT DATE</label>
+                        <br>
+                        <input type="date" id="Check-out" placeholder="mm/dd/yyyy"> 
+                    </td>
+                    <td>
+                        <label for="guests">NUMBER OF GUESTS</label> <br>
+                        <input type="number" id="guests" min="1" max="5">
+                    </td>
+                    <td>
+                        <br>
+                        <button> CHECK AVAILABILITY</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="pictures">
+        <h2>Explore our apartment</h2>
+        <p> The apartment is located in Sunny Hill, Pristina. Find the exact location in the following link: <a href="#">Location</a></p>
+    </div>
+
+    <!--Image slider-->
+    <section>
+
+        <div class="swiper mySwiper container">
+            <div class="swiper-wrapper content">
+
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="images/bedroom.jpg" alt="">
+                        </div>
+
+                        <div class="image-text">
+                            <span class="img-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, modi?</span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="images/living room3.jpg" alt="">
+                        </div>
+
+                        <div class="image-text">
+                            <span class="img-description">Lorem ipsum consectetur adipisicing elit. Quo, exercitationem!</span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="images/living room.jpg" alt="">
+                        </div>
+
+                        <div class="image-text">
+                            <span class="img-description">Lorem ipsum consectetur adipisicing elit. Culpa, ipsam.</span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="images/living room2.jpg" alt="">
+                        </div>
+
+                        <div class="image-text">
+                            <span class="img-description">Lorem ipsum consectetur adipisicing elit. Deserunt, odio?</span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="images/kitchen 2.jpg" alt="">
+                        </div>
+
+                        <div class="image-text">
+                            <span class="img-description">Lorem ipsum consectetur, adipisicing elit. Numquam, fuga.</span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="images/kitchen.jpg" alt="">
+                        </div>
+
+                        <div class="image-text">
+                            <span class="img-description">Lorem ipsum consectetur adipisicing elit. Minima, nesciunt!</span>
+
+                        </div>
+                
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </section>
+    
+    
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+    <div class="hosting">
+        <h2>Hosting at our apartment</h2>
+    </div>
+
+    <div class="customer-support">
+        <figure class="figs">
+            <img src="images/hrt.jpg" alt="">
+            <figcaption>Lorem, ipsum dolor sit amet consectetur adipisicing.</figcaption>
+        </figure>
+        <figure class="figs">
+            <img src="images/home-removebg-preview.png" alt="">
+            <figcaption>Lorem, ipsum dolor sit amet consectetur adipisicing.</figcaption>
+        </figure>
+        <figure class="figs">
+            <img src="images/star2.png" alt="">
+            <figcaption>Lorem, ipsum dolor sit amet consectetur adipisicing.</figcaption>
+        </figure>
+    </div>
+    <div class="last-text">
+        <h2>Suitable for any event</h2>
+        <p>Check out the theme of the apartment with these design pictures</p>
+        <div class="design-pictures">
+            <img src="images/design.jpg" alt="">
+            <img src="images/design 2.jpg" alt="">
+            <img src="images/design 3.jpg" alt="">
+            <img src="images/design 4.jpg" alt="">
+        </div>
+        <h4>When are you traveling?</h4>
+        <p> Plan your trip accordingly. Add your dates months head</p>
+        <span> <button>Add dates</button></span>
+      
+    </div>
+
+    <footer>
+        <div class="footer">
+            <p>
+                <b>Airbnb</b> <br>
+                Lorem ipsum dolor <br>
+                sit amet consectetur.
+            </p>
+            <p>
+                <b>Hosting </b><br>
+                Lorem ipsum dolor <br>
+                sit amet consectetur.
+            </p>
+            <p>
+                <b>Contact us</b> <br>
+                Lorem ipsum dolor <br>
+                sit amet consectetur.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
